@@ -26,11 +26,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: pnpm
 
-      - name: run setup
-        run: make setup
-
-      - name: run lint
-        run: make lint
-
-      - name: run test
-        run: make test
+      # BEGIN
+      # Set the project up, run the linter and run the tests.
+      # END
